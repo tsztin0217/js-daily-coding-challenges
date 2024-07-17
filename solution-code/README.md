@@ -2,7 +2,7 @@
 
 ## Solution Code
 
-*Please note that the solutions provided for these coding challenges represent just one of many possible approaches to solving them. In programming, there are often multiple ways to achieve the same outcome, each with its own trade-offs in terms of efficiency, readability, and complexity. We encourage learners to explore alternative solutions and techniques as they grow in their coding journey.*
+*Please note that the solutions provided for these coding challenges represent just one of many possible approaches to solving them. In programming, there are often multiple ways to achieve the same outcome, each with its own trade-offs in terms of efficiency, readability, and complexity. We encourage you to explore alternative solutions and techniques as you progress in your coding journey.*
 
 ### Challenge: 00-sayHello (example)
 
@@ -199,7 +199,9 @@ function findHighestPriced(items) {
 // or
 
 function findHighestPriced(items) {
-  return items.reduce((highest, item) => item.price > highest.price ? item : highest, items[0]);
+  return items.reduce((highest, item) => (
+    item.price > highest.price ? item : highest, items[0]
+  ));
 }
 ```
 
@@ -227,55 +229,7 @@ function reduceArray(arr, callback, initialValue) {
 }
 ```
 
-### Challenge: 19-isPrime
-
-```js
-function isPrime(num) {
-  if (num <= 1 || !Number.isInteger(num)) return false; // Check for less than or equal to 1 and non-integer values
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) return false; // Check divisibility by each number
-  }
-  return true;
-}
-```
-
-### Challenge: 20-primeFactors
-
-```js
-function primeFactors(num) {
-  let factors = [];
-  for (let i = 2; i <= num; i++) {
-    while (isPrime(i) && num % i === 0) {
-      factors.push(i);
-      num /= i;
-    }
-  }
-  return factors;
-}
-```
-
-### Challenge: 21-intersection
-
-```js
-function intersection(a1, a2) {
-  let result = [];
-  // create copy of 2nd array to prevent mutating original
-  let _a2 = [...a2];
-  a1.forEach(val => {
-    let idx = _a2.indexOf(val);
-    if (idx > -1) result.push(_a2.splice(idx, 1)[0]);
-  });
-  return result;
-}
-
-// or
-
-function intersection(arr1, arr2) {
-  return arr1.filter(value => arr2.includes(value));
-}
-```
-
-### Challenge: 22-flatten
+### Challenge: 19-flatten
 
 ```js
 function flatten(arr) {
@@ -308,7 +262,54 @@ function flatten(arr) {
 }
 ```
 
+### Challenge: 20-primeFactors
 
+```js
+function primeFactors(num) {
+  let factors = [];
+  for (let i = 2; i <= num; i++) {
+    while (isPrime(i) && num % i === 0) {
+      factors.push(i);
+      num /= i;
+    }
+  }
+  return factors;
+}
+```
+
+### Challenge: 21-isPrime
+
+```js
+function isPrime(num) {
+  // Check for less than or equal to 1 and non-integer values
+  if (num <= 1 || !Number.isInteger(num)) return false; 
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false; // Check divisibility by each number
+  }
+  return true;
+}
+```
+
+### Challenge: 22-intersection
+
+```js
+function intersection(a1, a2) {
+  let result = [];
+  // create copy of 2nd array to prevent mutating original
+  let _a2 = [...a2];
+  a1.forEach(val => {
+    let idx = _a2.indexOf(val);
+    if (idx > -1) result.push(_a2.splice(idx, 1)[0]);
+  });
+  return result;
+}
+
+// or
+
+function intersection(arr1, arr2) {
+  return arr1.filter(value => arr2.includes(value));
+}
+```
 
 ### Challenge: 23-balancedBrackets
 

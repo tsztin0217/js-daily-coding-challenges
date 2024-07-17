@@ -19,13 +19,6 @@ function sayHello() {
 }
 
 
-
-
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 01-addOne
 
@@ -33,8 +26,8 @@ Difficulty: Basic
 
 Prompt:
 
-- Write a function called addOne that takes a single number as an argument and 
-  returns that number plus 1.
+Write a function called addOne that takes a single number as an argument and 
+returns that number plus 1.
 
 Examples:
 
@@ -42,11 +35,6 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------------------*/
 // Your solution for 01-addOne here:
-
-
-
-
-
 
 
 
@@ -76,11 +64,6 @@ addTwoNumbers('Hello', 5) //=> NaN
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 03-sumNumbers
 
@@ -105,11 +88,6 @@ sumNumbers([]) //=> 0
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 04-addList
 
@@ -129,11 +107,6 @@ addList(1,50,1.23) //=> 52.23
 addList(7,-12) //=> -5
 -----------------------------------------------------------------------------*/
 // Your solution for 04-addList here:
-
-
-
-
-
 
 
 
@@ -166,15 +139,10 @@ computeRemainder(10.5, 3) //=> 1.5
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 06-range
 
-Difficulty: basic
+Difficulty: Basic
 
 Prompt:
 
@@ -198,11 +166,6 @@ range(5,2) //=> "First argument must be less than second"
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 07-reverseUpcaseString
 
@@ -211,19 +174,15 @@ Difficulty: Basic
 Prompt:
 
 - Write a function called reverseUpcaseString that accepts a single string 
-  argument, then returns the string with its characters in reverse order and
-  converts all characters to uppercase.
+  argument.
+- The reverseUpcaseString function should return the string with its characters 
+  in reverse order and convert all characters to uppercase.
 
 Examples:
 
 reverseUpcaseString("SEI Rocks!") //=> "!SKCOR IES" 
 -----------------------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
-
-
-
-
-
 
 
 
@@ -242,15 +201,10 @@ Prompt:
 
 Examples:
 
-removeEnds('SEI Rocks!') //=> "EI Rocks"
+removeEnds('SEB Rocks!') //=> "EB Rocks"
 removeEnds('a') //=> "" (empty string)
 -----------------------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
-
-
-
-
-
 
 
 
@@ -298,11 +252,6 @@ charCount('Today is fantastic!')
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 10-formatWithPadding
 
@@ -333,11 +282,6 @@ formatWithPadding(1234, '*', 3) //=> "1234"
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 11-isPalindrome
 
@@ -361,11 +305,6 @@ isPalindrome('A nut for a jar of tuna') //=> true
 isPalindrome('') //=> true
 -----------------------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
-
-
-
-
-
 
 
 
@@ -401,11 +340,6 @@ hammingDistance('abc', 'ab') //=> NaN
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 13-mumble
 
@@ -433,11 +367,6 @@ mumble('!A 2') //=> '!-AA-   -2222'
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 14-fromPairs
 
@@ -454,15 +383,13 @@ Prompt:
 
 Examples:
 
-fromPairs([ ['a', 1], ['b', 2], ['c', 3] ]) //=> { a: 1, b: 2, c: 3 }
-fromPairs([ ['name', 'Sam"], ['age', 24], ['name', 'Sally'] ]) //=> { name: "Sally", age: 24 }
+fromPairs([ ['a', 1], ['b', 2], ['c', 3] ]) 
+//=> { a: 1, b: 2, c: 3 }
+
+fromPairs([ ['name', 'Sam"], ['age', 24], ['name', 'Sally'] ]) 
+//=> { name: "Sally", age: 24 }
 -----------------------------------------------------------------------------*/
 // Your solution for 14-fromPairs here:
-
-
-
-
-
 
 
 
@@ -494,11 +421,6 @@ mergeObjects({a: 1, b: 2, c: 3}, {d: 4}, {b: 22, d: 44})
 //=> {a: 1, b: 22, c: 3, d: 44}
 -----------------------------------------------------------------------------*/
 // Your solution for 15-mergeObjects here:
-
-
-
-
-
 
 
 
@@ -546,11 +468,6 @@ findHighestPriced([
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 17-mapArray
 
@@ -584,11 +501,6 @@ mapArray( ['rose', 'tulip', 'daisy'], function(f, i) {
 //=> ["1 - rose", "2 - tulip", "3 - daisy"]
 -----------------------------------------------------------------------------*/
 // Your solution for 17-mapArray here:
-
-
-
-
-
 
 
 
@@ -645,13 +557,72 @@ reduceArray( ['Yes', 'No', 'Yes', 'Maybe'], function(acc, v) {
 
 
 
+/*-----------------------------------------------------------------------------
+Challenge: 19-flatten
+
+Difficulty: Intermediate
+
+Prompt:
+
+- Write a function named flatten that accepts a single array that may contain nested arrays and returns a new "flattened" array.
+- A flattened array is an array that contains no nested arrays.
+- Arrays maybe nested at any level.
+- If any of the arrays have duplicate values those duplicate values should be present in the returned array.
+- The values in the new array should maintain their ordering as shown in the examples below.
+
+Hint: This assignment provides an excellent opportunity to use recursion (a
+function that calls itself). You can also solve it by using an inner function.
+
+Examples:
+
+flatten( [1, [2, 3]] );
+//=> [1, 2, 3]  (a new array) 
+flatten( [1, [2, [3, [4]]], 1, 'a', ['b', 'c']] );
+//=> [1, 2, 3, 4, 1, 'a', 'b', 'c']
+-----------------------------------------------------------------------------*/
+// Your solution for 19-flatten here:
 
 
 
 
 
 /*-----------------------------------------------------------------------------
-Challenge: 19-isPrime
+Challenge: 20-primeFactors
+
+Difficulty: Intermediate
+
+Prompt:
+
+Now that you have solved the last challenge of determining if a whole number is
+prime, let's expand upon that concept to...
+
+- Write a function named primeFactors that accepts a whole number greater than
+  one (1) as an argument and returns an array of that argument's prime factors.
+- The prime factors of a whole number are the prime numbers that, when
+  multiplied together, equals the whole number.
+- If the argument provided is not greater than 1, or not a whole number, then
+  primeFactors should return an empty array.
+
+Examples:
+
+primeFactors(2) //=> [2]
+primeFactors(3) //=> [3]
+primeFactors(4) //=> [2, 2]
+primeFactors(18) //=> [2, 3, 3]
+primeFactors(29) //=> [29]
+primeFactors(105) //=> [3, 5, 7]
+primeFactors(200) //=> [2, 2, 2, 5, 5]
+
+Hint: Code a nested isPrime(n) helper function that returns true if n is prime, otherwise it returns false
+-----------------------------------------------------------------------------*/
+// Your solution for 20-primeFactors here:
+
+
+
+
+
+/*-----------------------------------------------------------------------------
+Challenge: 21-isPrime
 
 Difficulty: Intermediate
 
@@ -671,48 +642,14 @@ isPrime(4) //=> false
 isPrime(29) //=> true
 isPrime(200) //=> false
 -----------------------------------------------------------------------------*/
-// Your solution for 19-isPrime here:
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------------------------------------------
-Challenge: 20-primeFactors
-Difficulty: Intermediate
-Prompt:
-Now that you have solved the last challenge of determining if a whole number is prime, let's expand upon that concept to...
-- Write a function named primeFactors that accepts a whole number greater than one (1) as an argument and returns an array of that argument's prime factors.
-- The prime factors of a whole number are the prime numbers that, when multiplied together, equals the whole number.
-- If the argument provided is not greater than 1, or not a whole number, then primeFactors should return an empty array.
-Examples:
-primeFactors(2) //=> [2]
-primeFactors(3) //=> [3]
-primeFactors(4) //=> [2, 2]
-primeFactors(18) //=> [2, 3, 3]
-primeFactors(29) //=> [29]
-primeFactors(105) //=> [3, 5, 7]
-primeFactors(200) //=> [2, 2, 2, 5, 5]
-Hint: Code a nested isPrime(n) helper function that returns true if n is prime, otherwise it returns false
------------------------------------------------------------------*/
-// Your solution for 20-primeFactors here:
-
-
-
-
-
+// Your solution for 21-isPrime here:
 
 
 
 
 
 /*-----------------------------------------------------------------------------
-Challenge: 21-intersection
+Challenge: 22-intersection
 
 Difficulty: Intermediate
 
@@ -734,40 +671,7 @@ intersection(['a', 1], []) //=> []
 intersection(['a', 1], [true, 'a', 15]) //=> ['a']
 intersection([1, 'a', true, 1, 1], [true, 1, 'b', 1]) //=> [1, true, 1]
 -----------------------------------------------------------------------------*/
-// Your solution for 21-intersection here:
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------------------------------------------
-Challenge: 22-flatten
-Difficulty:  Intermediate
-Prompt:
-- Write a function named flatten that accepts a single array that may contain nested arrays and returns a new "flattened" array.
-- A flattened array is an array that contains no nested arrays.
-- Arrays maybe nested at any level.
-- If any of the arrays have duplicate values those duplicate values should be present in the returned array.
-- The values in the new array should maintain their ordering as shown in the examples below.
-Hint:
-- This assignment provides an excellent opportunity to use recursion (a function that calls itself).  It can also be solved by using an inner function.
-Examples:
-flatten( [1, [2, 3]] );
-//=> [1, 2, 3]  (a new array) 
-flatten( [1, [2, [3, [4]]], 1, 'a', ['b', 'c']] );
-//=> [1, 2, 3, 4, 1, 'a', 'b', 'c']
------------------------------------------------------------------*/
-// Your solution for 22-flatten here:
-
-
-
-
-
+// Your solution for 22-intersection here:
 
 
 
@@ -780,10 +684,15 @@ Difficulty: Intermediate
 
 Prompt:
 
-- Write a function called balancedBrackets that accepts a single string as an argument.
-- The input string is composed entirely of parentheses, brackets, or curly braces, i.e., (), [], or {}. Referred to as "braces" from this point forward.
-- The balancedBrackets function should return true if the string's braces are "balanced" and false if they are not.
-- The brackets are considered unbalanced if any closing bracket does not close the same type of opening bracket, ignoring already matched brackets between them. These examples may explain it best:
+- Write a function called balancedBrackets that accepts a single string as an 
+  argument.
+- The input string is composed entirely of parentheses, brackets, or curly 
+  braces, i.e., (), [], or {}. Referred to as "braces" from this point forward.
+- The balancedBrackets function should return true if the string's braces are 
+  "balanced" and false if they are not.
+- The brackets are considered unbalanced if any closing bracket does not close 
+  the same type of opening bracket, ignoring already matched brackets between 
+  them. These examples may explain it best:
 
 Examples:
 
@@ -799,11 +708,6 @@ balancedBrackets( '[({}[])]' ) // => true
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 24-isWinningTicket
 
@@ -811,15 +715,23 @@ Difficulty:Intermediate
 
 Prompt:
 
-- Write a function called isWinningTicket that accepts a single array as an argument.
-- The input array represents a 'lottery ticket' consisting of one or more nested 2-value arrays. The first value of a nested array will be a string, the second an integer.
-- The isWinningTicket function should return true if all of the nested arrays have a character in the string whose numeric character code equals the integer (2nd value).
-- If any of the nested arrays have a string where all of the character's character code does not match the integer, then return false.
+- Write a function called isWinningTicket that accepts a single array as an 
+  argument.
+- The input array represents a 'lottery ticket' consisting of one or more 
+  nested 2-value arrays. The first value of a nested array will be a string, 
+  the second an integer.
+- The isWinningTicket function should return true if all of the nested arrays
+  have a character in the string whose numeric character code equals the 
+  integer (2nd value).
+- If any of the nested arrays have a string where all of the character's 
+  character code does not match the integer, then return false.
 
 Hints:
 
-- A character/string can be created from a character code using the String.fromCharCode() class method.
-- A character within a string's character code can be obtained using the charCodeAt() string method.
+- A character/string can be created from a character code using the String.
+  fromCharCode() class method.
+- A character within a string's character code can be obtained using the 
+  charCodeAt() string method.
 
 Examples:
 
@@ -834,11 +746,6 @@ isWinningTicket( [ ['ABC', 66], ['dddd', 15], ['Hello', 108] ] ) // => false
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 25-getNumForIP
 
@@ -846,15 +753,29 @@ Difficulty: Intermediate
 
 Prompt:
 
-- Write a function called getNumForIP that accepts a single string as an argument.
-- The input string is formatted as an IPv4 address used in networking, such as '192.156.99.15'. To the computer, IP addresses are 32-bit binary numbers. However, people usually find it more convenient to work with these numbers as four sets of 8-bit integers in their decimal form. Each set is separated by a '.' character.
-- The getNumForIP function should return the numeric value of the string IP address being passed in as an argument.
+- Write a function called getNumForIP that accepts a single string as an 
+  argument.
+- The input string is formatted as an IPv4 address used in networking, such as 
+  '192.156.99.15'. To the computer, IP addresses are 32-bit binary numbers. 
+  However, people usually find it more convenient to work with these numbers as
+  four sets of 8-bit integers in their decimal form. Each set is separated by a
+  '.' character.
+- The getNumForIP function should return the numeric value of the string IP
+  address being passed in as an argument.
 
 Hints:
 
 - Each 8-bit number can hold a value between 0 and 255.
-- An IP's right most 8-bit number represents how many of 256 raised to the power of 0 (equals 1) there are. The next 8-bit number represents how many of 256 raised to the power of 1 (256) there are, etc. For example, if you took the right-most two 8-bit numbers of the IP address 192.156.99.15, you would have 15 * (256 ** 0), which equals 15, and 99 * (256**1), which equals 25344.
-- To compute the numeric value for an IP address, you first compute the value for each of the four 8-bit chunks (as described in the above hint), and add them together!
+- An IP's right most 8-bit number represents how many of 256 raised to the 
+  power of 0 (equals 1) there are. The next 8-bit number represents how many of
+  256 raised to the power of 1 (256) there are, etc. 
+  
+  For example, if you took the right-most two 8-bit numbers of the IP address 
+  192.156.99.15, you would have 15 * (256 ** 0), which equals 15, and 99 *
+  (256**1), which equals 25344.
+- To compute the numeric value for an IP address, you first compute the value
+  for each of the four 8-bit chunks (as described in the above hint), and add
+  them together!
 
 Examples:
 
@@ -869,11 +790,6 @@ getNumForIP( '10.0.0.1' ) // => 167772161
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 26-toCamelCase
 
@@ -881,13 +797,17 @@ Difficulty: Intermediate
 
 Prompt:
 
-- Write a function called toCamelCase that accepts a single string as an argument.
-- The toCamelCase function should return the string as camel-cased, removing each _ or - characters and capitalizing the character following the _ or -.
-- If the string argument does not contain a "_" or a "-", return the same string.
+- Write a function called toCamelCase that accepts a single string as an 
+  argument.
+- The toCamelCase function should return the string as camel-cased, removing 
+  each _ or - characters and capitalizing the character following the _ or -.
+- If the string argument does not contain a "_" or a "-", return the same 
+  string.
 
 Hints:
 
-- This is a great challenge for using regular expressions combined with the String.replace method.
+- This is a great challenge for using regular expressions combined with the 
+  String.replace() method.
 
 Examples:
 
@@ -903,11 +823,6 @@ toCamelCase( 'A_b_c' ) // => 'ABC'
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 27-countTheBits
 
@@ -915,14 +830,19 @@ Difficulty: Intermediate
 
 Prompt:
 
-- Write a function called countTheBits that accepts a single numeric argument that will be an integer.
-- The function should return the number of bits set to 1 in the number's binary representation.
+- Write a function called countTheBits that accepts a single numeric argument 
+  that will be an integer.
+- The function should return the number of bits set to 1 in the number's binary
+  representation.
 
 Hints:
 
-- We typically work with "decimal" numbers daily. Decimal is "base 10", where there are 10 digits available - 0 thru 9. However, it's binary that computers understand - 1's and 0's. The 1's and 0's are called bits.
-- As an example, the decimal value of 13 is represented in binary as 1101. There are 3 one bits and 1 zero bit in the decimal number of 13.
-- Carefully read the documentation for the Number.prototype.toString method.
+- We typically work with "decimal" numbers daily. Decimal is "base 10", where
+  there are 10 digits available - 0 thru 9. However, it's binary that computers
+  understand - 1's and 0's. The 1's and 0's are called bits.
+- As an example, the decimal value of 13 is represented in binary as 1101.
+  There are 3 one bits and 1 zero bit in the decimal number of 13.
+- Carefully read the documentation for the Number.prototype.toString() method.
 
 Examples:
 
@@ -938,11 +858,6 @@ countTheBits( 65535 ) //=> 16
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 28-gridTrip
 
@@ -950,15 +865,26 @@ Difficulty: Intermediate
 
 Prompt:
 
-- This challenge uses an imaginary grid where the y coordinate increases when you move up and decreases when you move down. Similarly, the x coordinate increases when you move right and decreases when you move left.
+- This challenge uses an imaginary grid where the y coordinate increases when 
+  you move up and decreases when you move down. Similarly, the x coordinate
+  increases when you move right and decreases when you move left.
 - Write a function called gridTrip that accepts two arguments.
-- The first argument is an array containing two integers. The value in the first index of the array represents the starting x position on the grid. The second value in the array represents the starting y position.
-- The second argument is a string representing "moves" using the characters 'U', 'D', 'R' & 'L' to mean moving Up, Down, Right & Left, respectively. Each direction character is followed by digits representing how many units to move in that direction. For example, a string of 'D15R2U4' moves down 15 units, right 2 units, and finally, up 4 units from the starting coordinates.
+- The first argument is an array containing two integers. The value in the
+  first index of the array represents the starting x position on the grid. The
+  second value in the array represents the starting y position.
+- The second argument is a string representing "moves" using the characters
+  'U', 'D', 'R' & 'L' to mean moving Up, Down, Right & Left, respectively. Each
+  direction character is followed by digits representing how many units to move
+  in that direction. For example, a string of 'D15R2U4' moves down 15 units
+  right 2 units, and finally, up 4 units from the starting coordinates.
 - The direction characters will always be upper case.
-- The gridTrip function should return a new array of two integers: the final x position and the final y position. Do not modify the array argument).
+- The gridTrip function should return a new array of two integers: the final x
+  position and the final y position. Do not modify the array argument.
 
 Hint:
-- Using the String.match method to return an array of regular expression matches can be helpful if you want to break the single string of moves into an array of distinct moves by direction. Be sure to use the global flag, e.g. /cat/g, when defining the regexp.
+- Using the String.match() method to return an array of regular expression
+  matches can be helpful if you want to break the single string of moves into
+  an array of distinct moves by direction. Be sure to use the global flag, for example: /cat/g, when defining the regexp.
 
 Examples:
 
@@ -972,11 +898,6 @@ gridTrip( [100, -22], 'L2L15D50U1D9') //=> [83, -80]
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 29-addChecker
 
@@ -985,14 +906,19 @@ Difficulty: Intermediate
 Prompt:
 
 - Write a function called addChecker that accepts two arguments.
-- The first argument is an array containing at least two integers. The integers in the array have been pre-sorted in ascending order.
+- The first argument is an array containing at least two integers. The integers
+  in the array have been pre-sorted in ascending order.
 - The second argument is an integer.
-- The addChecker function should return true if there are two integers in the array of integers (first argument) that, when added together, equals the integer passed in as the second argument.
-- If there are no two integers in the array with a sum equal to the second argument, addChecker should return false.
+- The addChecker function should return true if there are two integers in the
+  array of integers (first argument) that, when added together, equals the
+  integer passed in as the second argument.
+- If there are no two integers in the array with a sum equal to the second
+  argument, addChecker should return false.
 
 Hint:
 
-- An efficient solution can leverage the fact that the integers in the array come sorted for you.
+- An efficient solution can leverage the fact that the integers in the array
+  come sorted for you.
 
 Examples:
 
@@ -1007,11 +933,6 @@ addChecker( [10, 15, 16, 22], 19 ) // => false
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 30-totalTaskTime
 
@@ -1021,8 +942,8 @@ Prompt:
 
 - Write a function called totalTaskTime that accepts two arguments.
 - The first argument is an array of integers referred to as a "queue". 
-- Each integer in the queue represents a "task" - specifically, the amount of time 
-  to complete that task.
+- Each integer in the queue represents a "task" - specifically, the amount of 
+  time to complete that task.
 - The second argument is an integer representing the number of CPU "threads" 
   available to  process all of the tasks in the queue.
 - The totalTaskTime function should return an integer representing the total 
@@ -1043,11 +964,6 @@ totalTaskTime( [2, 2, 3, 3, 4, 4], 2 ) //=> 9
 totalTaskTime( [5, 2, 6, 8, 7, 2], 3 ) // => 12
 -----------------------------------------------------------------------------*/
 // Your solution for 30- here:
-
-
-
-
-
 
 
 

@@ -290,19 +290,22 @@ describe("18-reduceArray", function () {
   });
 });
 
-describe("19-isPrime", function () {
-  it("primes are greater than 1", function () {
-    expect(isPrime(1)).toBe(false);
+// Challenge: 19-flatten
+describe("19-flatten", function () {
+  it("flattens nested arrays", function () {
+    expect(flatten([1, [2, [3, [4]]], 1, "a", ["b", "c"]])).toEqual([
+      1,
+      2,
+      3,
+      4,
+      1,
+      "a",
+      "b",
+      "c",
+    ]);
   });
-  it("primes are whole numbers", function () {
-    expect(isPrime(3.1)).toBe(false);
-  });
-  it("checks for prime number", function () {
-    expect(isPrime(2)).toBe(true);
-    expect(isPrime(3)).toBe(true);
-    expect(isPrime(4)).toBe(false);
-    expect(isPrime(29)).toBe(true);
-    expect(isPrime(200)).toBe(false);
+  it("returns same array if no nesting", function () {
+    expect(flatten([1, 2, 3])).toEqual([1, 2, 3]);
   });
 });
 
@@ -322,7 +325,24 @@ describe("20-primeFactors", function () {
   });
 });
 
-// Challenge: 21-intersection
+// Challenge: 21-isprime
+describe("21-isPrime", function () {
+  it("primes are greater than 1", function () {
+    expect(isPrime(1)).toBe(false);
+  });
+  it("primes are whole numbers", function () {
+    expect(isPrime(3.1)).toBe(false);
+  });
+  it("checks for prime number", function () {
+    expect(isPrime(2)).toBe(true);
+    expect(isPrime(3)).toBe(true);
+    expect(isPrime(4)).toBe(false);
+    expect(isPrime(29)).toBe(true);
+    expect(isPrime(200)).toBe(false);
+  });
+});
+
+
 describe("22-intersection", function () {
   it("returns an empty array when no intersection exists", function () {
     expect(intersection([1], [2])).toEqual([]);
@@ -345,25 +365,6 @@ describe("22-intersection", function () {
     intersection(a1, a2);
     expect(a1).toEqual(_a1);
     expect(a2).toEqual(_a2);
-  });
-});
-
-// Challenge: 22-flatten
-describe("22-flatten", function () {
-  it("flattens nested arrays", function () {
-    expect(flatten([1, [2, [3, [4]]], 1, "a", ["b", "c"]])).toEqual([
-      1,
-      2,
-      3,
-      4,
-      1,
-      "a",
-      "b",
-      "c",
-    ]);
-  });
-  it("returns same array if no nesting", function () {
-    expect(flatten([1, 2, 3])).toEqual([1, 2, 3]);
   });
 });
 
