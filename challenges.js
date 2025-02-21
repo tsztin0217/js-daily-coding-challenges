@@ -116,10 +116,13 @@ addList(1,50,1.23) //=> 52.23
 addList(7,-12) //=> -5
 -----------------------------------------------------------------------------*/
 // Your solution for 04-addList here:
-
-
-
-
+function addList(...numbers){
+  if (numbers.length === 0) {
+    return 0;
+  } else {
+    return numbers.reduce((acc, num) => acc + num);
+  }
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
