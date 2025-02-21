@@ -67,8 +67,6 @@ function addTwoNumbers(num1, num2) {
   }
 }
 
-
-
 /*-----------------------------------------------------------------------------
 Challenge: 03-sumNumbers
 
@@ -88,9 +86,15 @@ sumNumbers([2, 10, -5]) //=> 7
 sumNumbers([]) //=> 0
 -----------------------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
-
-
-
+function sumNumbers(array) {
+  if (array.length === 0) {
+    return 0;
+  } else {
+    return array.reduce((acc, number) => {
+      return acc + number;
+    }, 0)
+    }
+  }
 
 
 /*-----------------------------------------------------------------------------
